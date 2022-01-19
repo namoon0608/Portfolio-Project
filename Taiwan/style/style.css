@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+header {
+  background-color: #c4c4c4;
+  width: 100%;
+  padding: 1rem;
+}
+.headerTitle {
+  font-size: 2.5rem;
+}
+.headerText {
+  font-size: 1rem;
+}
+nav {
+  background-color: #43413e;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  padding-left: 1rem;
+}
+nav ul li {
+  display: flex;
+}
+nav ul li a {
+  color: gray;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  font-size: 1.35rem;
+  transition: all 0.75s ease;
+}
+nav ul li a:hover,
+.active {
+  color: black;
+  background-color: white;
+}
+main {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+section.left,
+section.right {
+  padding: 1.5rem;
+}
+section.right h4 {
+  font-size: 1.25rem;
+  text-align: center;
+}
+section.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 250px;
+}
+.map {
+  width: 300px;
+  height: 300px;
+  border: 0;
+  border-radius: 10%;
+}
+#curve_chart {
+  width: 100%;
+  height: 80%;
+}
+
+/* 農業改革部分、工業改革部分、經濟起飛部分、關於作者 */
+section.container {
+  display: flex;
+}
+/* 農業 */
+section.container section.left p.special {
+  color: red;
+  font-size: 1.75rem;
+  text-align: center;
+}
+section.container section.left ol {
+  padding-left: 1rem;
+}
+
+/* 工業 */
+section.container section.left div.center {
+  display: flex;
+  margin: 2rem;
+}
+section.container section.left div.center p {
+  padding: 1rem;
+}
+
+/* 經濟起飛 */
+section.container section.left img {
+  margin: 2rem 0rem;
+  width: 100%;
+}
+section.container section.left ul {
+  padding-left: 1.25rem;
+}
+section.container section.left ul li a {
+  color: blue;
+  text-decoration: none;
+}
+
+/* 關於作者 */
+section.container section.left img.myPic {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+section.container section.authorContent {
+  display: block;
+  align-items: flex-start;
+}
+section.container section.authorContent h3 {
+  margin-bottom: 0.5rem;
+}
+section.container section.right ul.skill {
+  padding-left: 1.25rem;
+}
+
+@media screen and (max-width: 600px) {
+  #curve_chart {
+    width: 100%;
+    height: 40%;
+  }
+}
+@media screen and (max-width: 650px) {
+  nav ul {
+    flex-direction: column;
+  }
+}
